@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: #252525;
+            color: white;
+            font: normal bold 16px Arial,Helvetica,sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seja bem vindo!</h1>
+    <h2 id="meuh2"></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt quae, ipsa id enim totam quasi. Totam accusamus placeat aspernatur non quia dolor, cum repellat perferendis praesentium! Tempora, facilis impedit!</p>
+    <script>
+        let idade = '16 anos'
+        var nome = window.prompt('Qual o seu nome?')
+        window.alert(`Seja bem, ${nome}.`)
+        var n1 = Number(window.prompt('Digite um número'))
+        var n2 = Number(window.prompt('Coloca outro número'))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual à ${s}`)
+        document.getElementById("meuh2").textContent = `Nome do usuário:${nome}, idade:${idade}`
+        //Number.parseInt() converter em número inteiro
+        //Number.parseFloat() converter em número real
+        //Number() converter em ambos
+        //String()
+        //n.ToString()
+        //number + nummber = adição
+        //string + string = concatenação
+        /*
+        var s = 'JavaScript'
+        'Eu estou aprendendo s' não faz interpolação
+        'Eu estou aprendendo' + s usa concatenação
+        `Eu estou aprendendo ${s}` usa template string
+        */
+    </script>
+</body>
+</html>

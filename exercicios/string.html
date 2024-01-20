@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRING</title>
+    <style>
+        body {
+            font: normal 1,5em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="upper"></h1>
+    <script>
+        var nome = window.prompt('Digite o seu nome aqui:')
+        document.write(`Este nome tem ${nome.length} letras.`)
+
+        document.write(`Nome minúsculo: ${nome.toLowerCase()}`)
+        document.getElementById('upper').textContent = `Seja bem vindo, ${nome.toUpperCase()}`
+    </script>
+</body>
+</html>
