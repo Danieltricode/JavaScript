@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico de DOM</title>
+    <style>
+        body{
+            background: #ff6f00;
+            color: white;
+            font: normal 20px Arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem vindo</h1>
+    <p>Os primeiros passos com <strong>DOM</strong></p>
+    <p>Veja abaixo:</p>
+    <div id="msg">Aqui!</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'blue'
+        /*var d = window.document.getElementById('msg')
+         d.style.background = 'green'
+         d.innerText = 'Estou aprendendo...'*/
+        //  var d = window.document.getElementsByName('msg')[0]
+        //  d.innerText = 'Olá!'
+        var d = document.querySelector('div#msg')
+        d.style.background = '#252525'
+        d.innerHTML = 'Olá, Mundo!' //seleciona classe(.) e id(#)
+    </script>
+</body>
+</html>

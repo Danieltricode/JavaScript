@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        div#container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            background-color: #ff6f00;
+            color: white;
+            font-family: Arial, Helvetica, sans-seriff;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('container')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseour', sair)
+        function clicar() {
+            a.innerText = "Clicou!"
+            a.style.background = "red"
+        }
+        function entrar() {
+            a.innerText = "Oi!"
+        }
+        function sair() {
+            a.innerText = "Tchau!"
+            a.style.background = "#ff6f00"
+        }
+    </script>
+</body>
+</html>
