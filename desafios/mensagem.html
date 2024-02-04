@@ -22,6 +22,23 @@
     <button id="botao2">Botão 2</button>
     <button id="botao3">Botão 3</button>
     <script>
+        var botao1 = document.getElementById('botao1')
+        var botao2 = document.getElementById('botao2')
+        var botao3 = document.getElementById('botao3')
+
+        botao1.addEventListener('click', clique1)
+        botao2.addEventListener('click', clique2)
+        botao3.addEventListener('click', clique3)
+
+        function clique1() {
+            window.alert('Você clicou no primeiro botão!')
+        }
+        function clique2() {
+            window.alert('Você clicou no segundo botão!')
+        }
+        function clique3() {
+            window.alert('Você clicou no terceiro botão!')
+        }
     </script>
 </body>
 </html>
