@@ -1,0 +1,33 @@
+@charset UTF-8;
+
+body {
+    background-color: #ff6f00;
+    font: normal 1.3em Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+section {
+    background-color: #252525;
+    width: 500px;
+    padding: 25px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 5px #0000007e;
+}
+div {
+    margin: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #f7fcfe;
+}
+footer {
+    font-size: 18px;
+    font-style: italic;
+}
