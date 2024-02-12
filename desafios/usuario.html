@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário</title>
+</head>
+<body>
+    <h1 id="txt">Bem vindo!</h1>
+    <label for="user">Nome do usuário:</label>
+    <input type="text" id="user">
+    <input type="submit" value="Verificar" id="res" onclick="verificar()">
+    <script>
+        function verificar() {
+            var nome = document.getElementById('user').value
+            let txt = document.getElementById('txt')
+            if (nome.length == 0) {
+                txt.innerHTML = 'Por favor, preencha o formulário.'
+            } else {
+                txt.innerHTML = `Seja bem vindo, ${nome}!`
+            }
+        }
+    </script>
+</body>
+</html>

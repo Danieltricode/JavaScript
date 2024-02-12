@@ -17,6 +17,9 @@ section {
 div {
     margin: 20px;
 }
+div#img {
+    font-size: 10em;
+}
 a {
     color: white;
     text-decoration: none;
