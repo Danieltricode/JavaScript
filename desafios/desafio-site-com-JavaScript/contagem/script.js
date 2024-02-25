@@ -3,7 +3,7 @@ function contar() {
     let fim = document.getElementById('fim')
     let pass = document.getElementById('pass')
     var cont = document.getElementById('cont')
-    if (ini.value.lemgth == 0 || fim.value.length == 0 || pass.value.length == 0) {
+    if (ini.value.length == 0 || fim.value.length == 0 || pass.value.length == 0) {
         cont.innerHTML = "Impossível contar!"
     } else {
         cont.innerHTML = "Contando: <br>"

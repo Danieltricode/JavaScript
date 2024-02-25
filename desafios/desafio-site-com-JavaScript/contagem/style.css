@@ -28,7 +28,6 @@ input[type='button'] {
 }
 input[type='button']:hover {
     background-color: #1129ff;
-    color: #ffffff;
 }
 a {
     color: white;
