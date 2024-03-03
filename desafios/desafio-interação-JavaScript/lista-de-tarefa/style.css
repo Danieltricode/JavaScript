@@ -1,0 +1,51 @@
+@charset UTF-8;
+@font-face {
+    font-family: Vibrocentric;
+    src: url(../../components/font/Vibrocentric\ Bd\ It.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --fonte-título: Vibrocentric;
+    --fonte-principal: Arial, Helvetica, sans-serif;
+    --cor-de-fundo: #252525;
+    --cor001: #ff6f00;
+    --cor002: #0042e8;
+}
+body {
+    background-color: var(--cor-de-fundo);
+    color: white;
+    font-family: var(--fonte-principal);
+}
+
+header {
+    background-color: var(--cor001);
+    padding: 15px;
+}
+header > h1 {
+    font-family: var(--fonte-título);
+    text-align: center;
+}
+
+main {
+    padding: 38px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 8px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer img {
+    width: 35px;
+}
+footer img:hover {
+    background-color: var(--cor002);
+}
