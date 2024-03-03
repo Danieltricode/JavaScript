@@ -14,6 +14,7 @@
     --cor-de-fundo: #252525;
     --cor001: #ff6f00;
     --cor002: #0042e8;
+    --cor003: #202231;
 }
 body {
     background-color: var(--cor-de-fundo);
@@ -32,8 +33,44 @@ header > h1 {
 
 main {
     padding: 38px;
+    text-align: justify;
+}
+section {
+    background-color: var(--cor003);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 8px solid var(--cor002);
+    margin: auto;
+    padding: 50px;
+    border-radius: 20px;
+}
+input {
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+button {
+    background-color: var(--cor002);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+}
+button:hover {
+    background-color: #0048ff;
+}
+button:active {
+    background-color: #023ac9;
+    color: aliceblue;
 }
 
+footer {
+    text-align: center;
+    margin: 0;
+    line-height: 24px;
+}
 footer a {
     color: white;
     font-weight: bold;
@@ -44,8 +81,11 @@ footer a:hover {
     text-decoration: underline;
 }
 footer img {
-    width: 35px;
+    width: 30px;
 }
 footer img:hover {
     background-color: var(--cor002);
+}
+footer.text-footer {
+    font-size: 18px;
 }
