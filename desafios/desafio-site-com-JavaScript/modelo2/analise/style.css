@@ -40,6 +40,10 @@ input[type="button"] {
 input[type="button"]:hover {
     background-color: #2f2b52;
 }
+select {
+    margin: 20px 0;
+    width: 150px;
+}
 a {
     color: white;
     font-weight: bolder;

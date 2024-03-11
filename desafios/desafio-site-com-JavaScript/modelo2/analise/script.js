@@ -1,15 +1,26 @@
-function adicionar() {
-    let an = document.getElementById('txtnum')
-    let tab = document.getElementById('tab')
-    if (an.value.length == 0 || an.value > 100) {
-        window.alert('Erro, adiciona um número!')
+    let num = document.getElementById('txtnum')
+    let lista = document.getElementById('lista')
+    let res = document.querySelector('div#res')
+    let valor = []
+function isNumero(n) {
+     if (Number(n) >= 1 && Number(n) <= 100) {
+        return true
+     } else {
+        return false
+     }
+}
+function inLista(n, l) {
+    if (l.indexOf(number(n)) != -1) {
+        return true
     } else {
-        var num = [an.value]
-        var item = document.createElement('option')
-        item.text = `Valor ${num}`
-        tab.appendChild(item)
+        return false
     }
 }
-function finalizar() {
-    
+
+function adicionar() {
+    if (isNumero(num.value) && !inLista(num.value)) {
+        
+    } else {
+        window.alert('Valor inválido ou já encontrado na lista.')
+    }
 }
