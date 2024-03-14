@@ -23,6 +23,7 @@ function adicionar() {
         let item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado.`
         lista.appendChild(item)
+        res.innerHTML = ''
     } else {
         window.alert('Valor inválido ou já encontrado na lista.')
     }
@@ -30,12 +31,26 @@ function adicionar() {
     num.focus()
 }
 function finalizar() {
-    valor.sort
-    let text = document.createElement('p')
-    res.appendChild(text)
-    text.innerText = `Ao todo temos ${valor.length} números.
-    O maior valor foi.
-    O menor valor foi ${valor[0]}.
-    Somando todos os valores, temos.
-    A média dos valores digitados é.`
+    if (valor.length == 0) {
+        window.alert('Por favor, adicione um número antes de finalizar.')
+    } else {
+            let maior = valor[0]
+            let menor = valor[0]
+            let soma = 0
+            let media = 0
+            for(let pos in valor) {
+                soma += valor[pos]
+                if (valor[pos] > maior)
+                maior = valor[pos]
+                if (valor[pos] < menor)
+                menor = valor[pos]
+            }
+            media = soma / valor.length
+            res.innerHTML = ''
+            res.innerHTML += `<p>Ao todo temos ${valor.length} números.</p>`
+            res.innerHTML += `<p></p>O maior valor foi ${maior}.</p>`
+            res.innerHTML += `<p>O menor valor foi ${menor}.</p>`
+            res.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`
+            res.innerHTML += `<p>A média dos valores digitados é ${media}.</p>`
+        }
 }
