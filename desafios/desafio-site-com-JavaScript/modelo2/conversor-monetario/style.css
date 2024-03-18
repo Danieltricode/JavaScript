@@ -33,6 +33,9 @@ section {
 ::selection {
     background-color: #0229d4;
 }
+input, label {
+    margin-bottom: 10px;
+}
 input[type="button"] {
     background-color: #23203d;
     color: white;
@@ -42,10 +45,6 @@ input[type="button"] {
 }
 input[type="button"]:hover {
     background-color: #2f2b52;
-}
-select {
-    margin: 20px 0;
-    width: 150px;
 }
 a {
     color: white;
