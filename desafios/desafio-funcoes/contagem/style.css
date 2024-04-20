@@ -1,0 +1,27 @@
+@charset UTF-8;
+body {
+    display: flex;
+    background-color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label#tela-contagem {
+    font-size: 150px;
+}
+button {
+    padding: 10px;
+    background-color: #0042e8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #034aff;
+}
+button:active {
+    background-color: #0234b4;
+}
